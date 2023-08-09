@@ -1,0 +1,11 @@
+```html
+<div class="image-container">
+    <div *ngFor="let image of images" class="image-item">
+    <img [src]="image.download_url" alt="{{ image.author }}">
+    </div>
+    <div infinite-scroll [infiniteScrollDistance]="scrollDistance"
+   [infiniteScrollUpDistance]="scrollUpDistance"
+    [infiniteScrollUp]="true" (scrolled)="onScroll()">
+    </div>
+   </div>
+   ```   
